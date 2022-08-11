@@ -1,9 +1,11 @@
 theme: jekyll-theme-slate
 
-kramdown:
-  parse_block_html: true
-
 github:
   owner_url: https://github.com/Vetrox/formelsammlung/graphs/contributors 
   owner_name: the team 
+
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+   math_engine: mathjax
 
