@@ -7,3 +7,10 @@ My first paragraph.
 ## subheading
 text
 text
+
+### subsubheading
+
+$abc$
+
+$\frac{a}{b}$
+
