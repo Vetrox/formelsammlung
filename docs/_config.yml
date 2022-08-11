@@ -4,6 +4,6 @@ kramdown:
   parse_block_html: true
 
 github:
-  owner_url: abc
-  owner_name: ded
+  owner_url: https://github.com/Vetrox/formelsammlung
+  owner_name: the team 
 
