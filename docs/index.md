@@ -6,7 +6,7 @@
 Jeder zusammenhängende planare Graph erfüllt folgende Gleichung:\
 $$
 V-E+F = 2
-$$
+$$\
 Wobei $$V$$ die Anzahl an Knoten, $$E$$ die Anzahl an Kanten und $$F$$ die Anzahl Fächen ist.
 
 ## subheading
