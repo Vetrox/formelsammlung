@@ -2,3 +2,8 @@ theme: jekyll-theme-slate
 
 kramdown:
   parse_block_html: true
+
+collections:
+  authors:
+    output: true
+
