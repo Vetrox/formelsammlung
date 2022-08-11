@@ -3,9 +3,5 @@ theme: jekyll-theme-slate
 kramdown:
   parse_block_html: true
 
-author: lorem ipsum
-
-collections:
-  authors:
-    output: true
-
+author: abc
+authors: def
