@@ -1,8 +1,4 @@
-[TOC]
-
-\tableofcontents
-
-<toc/>
+{:toc}
 
 # Hello
 
