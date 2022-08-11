@@ -1,11 +1,6 @@
+My front matter
+---
+
+* TOC
 {:toc}
-
-# Hello
-
-## never
-
-### gonna
-
-# give
-
-{{:toc}}
+My first paragraph.
