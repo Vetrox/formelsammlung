@@ -1,5 +1,4 @@
-
-* TOC
+* IMPORTANT LINE FOR TOC
 {:toc}
 
 # heading 1
