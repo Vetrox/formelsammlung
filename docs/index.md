@@ -1,8 +1,3 @@
----
-author: dave
----
-
-
 * IMPORTANT LINE FOR TOC
 {:toc}
 
@@ -12,3 +7,14 @@ My first paragraph.
 ## subheading
 text
 text
+
+{{ site.author }}
+
+aa
+
+{{ site.authors }}
+
+xx 
+
+{{ page.author }}
+
