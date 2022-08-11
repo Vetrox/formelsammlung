@@ -3,5 +3,7 @@ theme: jekyll-theme-slate
 kramdown:
   parse_block_html: true
 
-author: abc
-authors: def
+github:
+  owner_url: abc
+  owner_name: ded
+
