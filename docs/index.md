@@ -39,6 +39,11 @@ In allen hinreichend starken widerspruchsfreien Systemen gibt es unbeweisbare Au
 ### Zweiter Unvollständigkeitssatz
 Hinreichendstarke widerspruchsfreie Systeme können ihre eigene Widerspruchsfreiheit nicht beweisen.
 
+## Quines
+In jeder Turing-vollständigen Sprache existiert ein Quine, also ein Programm, dass sich selbst ausgibt. Beweis über den Fixpunktsatz von Kleene.
+
+[Wikipedia](https://de.wikipedia.org/wiki/Quine_(Computerprogramm)#Theoretischer_Hintergrund)
+
 # Graphentheorie
 ## Eulerscher Polyedersatz
 Jeder zusammenhängende planare Graph erfüllt folgende Gleichung:\
