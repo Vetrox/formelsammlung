@@ -60,10 +60,10 @@ Wobei $$V$$ die Anzahl an Knoten, $$E$$ die Anzahl an Kanten und $$F$$ die Anzah
 - Branch löschen: `git push origin :mybranch`
 - Tag erstellen: `git tag -a mytag`
   - Tag löschen: `git push --delete origin mytag`
-- Stash (staged & unstaged uncommited changes): `git stash save 'mydescription'`
-  - Re-Apply changes (apply=keep stash): `git stash [apply/pop] stashname`
-  - Stash untracked changes aswell: `git stash -u`
-  - Stash ignored and untracked aswell: `git stash -a`
+- Stash (staged & unstaged uncommited changes): `git stash push -m 'mydescription'`
+  - Re-Apply changes (apply=keep stash): `git stash [apply/pop] stash@{xy}`
+  - Stash untracked changes aswell: `-u`
+  - Stash ignored and untracked aswell: `-a`
   - List stashes: `git stash list`
-  - Create branch of stash: `git stash branch branchname stashname`
-  - Delete stash: `git stash drop stashname`
+  - Create branch of stash: `git stash branch branchname stash@{xy}`
+  - Delete stash: `git stash drop stash@{xy}`
