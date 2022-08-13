@@ -14,6 +14,11 @@ Ein Problem ist NP-vollständig, wenn es in NP liegt und NP-schwer ist.\
 [TSP](https://de.wikipedia.org/wiki/Problem_des_Handlungsreisenden)\
 [Wikipedia](https://de.wikipedia.org/wiki/NP-Vollst%C3%A4ndigkeit)
 
+## Untere Laufzeitschranke für vergleichsbasierte Sortieralgorithmen
+Die worst-case Laufzeit eines vergleichsbasierten Sortieralgorithmus, muss in $$\Omega(n \log n)$$ liegen, wobei $$n$$ die Länge der Eingabe-Sequenz ist.\
+**Beweisidee:** Jeder vergleichsbasierte Algorithmus kann als Binärbaum dargestellt werden, der an jedem Knoten einen Vergleich der Form $$a_i \le a_j$$ durchführt. Eine Ausführung des Sortieralgorithmus ist ein Pfad von der Wurzel zu einem Blatt. Da jede der $$n!$$ Permutationen der Eingabe-Sequenz als ein Blatt vorkommen muss, muss der Baum mindestens eine Tiefe von $$\log_2(n!)$$ haben. $$\log_2(n!)$$ liegt in $$\Theta(n\log n)$$.\
+[Wikipedia](https://de.wikipedia.org/wiki/Sortierverfahren#Beweis_der_unteren_Schranke_f%C3%BCr_vergleichsbasiertes_Sortieren)
+
 # Graphentheorie
 ## Eulerscher Polyedersatz
 Jeder zusammenhängende planare Graph erfüllt folgende Gleichung:\
