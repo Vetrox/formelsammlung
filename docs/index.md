@@ -53,21 +53,3 @@ $$\
 Wobei $$V$$ die Anzahl an Knoten, $$E$$ die Anzahl an Kanten und $$F$$ die Anzahl Fächen ist.
 
 [Wikipedia](https://de.wikipedia.org/wiki/Planarer_Graph#Der_Eulerscher_Polyedersatz)
-
-# heading
-## subheading
-text
-text
-
-### subsubheading
-
-$abc$
-
-$\frac{a}{b}$
-
-Here, have some $$\pi$$.
-
-The greatest equation known to man is: 
-
-$$e^{ix} = \cos{x} + i\sin{x}$$
-
