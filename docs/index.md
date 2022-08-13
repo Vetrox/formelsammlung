@@ -54,6 +54,57 @@ Wobei $$V$$ die Anzahl an Knoten, $$E$$ die Anzahl an Kanten und $$F$$ die Anzah
 
 [Wikipedia](https://de.wikipedia.org/wiki/Planarer_Graph#Der_Eulerscher_Polyedersatz)
 
+# Softwareentwicklung
+## Design Patterns
+### Strategy Pattern
+Das Verhalten (Funktionalität, Algorithmus) eines Objekts (dem Context) 
+wird in eine eigene Strategieklasse (Strategie = gekapselter Algorithmus) ausgelagert.
+Der Context hält eine Referenz auf sein Strategieobjekt und wenn er das ausgelagerte
+Verhalten ausführen soll, so delegiert er den Aufruf an sein referenziertes Strategieobjekt.
+Der Context arbeitet mit einer Strategie-Schnittstelle.
+
+[Strategy](https://www.philipphauer.de/study/se/design-pattern/strategy.php)
+
+### Observer Pattern
+Das Observer Pattern ermöglicht, dass sich Objekte (Observer, **beobachtendes** Objekt) 
+bei einem anderem Objekt (Subject, **beobachtetes** Objekt) registrieren und 
+fortan vom diesem informiert werden, sobald es sich ändert. 
+
+Beispiel sind Clients (Observer), die sich bei einem Server (Subject) registrieren,
+um über broadcasts informiert zu werden. Dabei werden Interfaces verwendet,
+um das Verhalten von Observer und Subject zu extrahieren.
+
+[Observer](https://www.philipphauer.de/study/se/design-pattern/observer.php)
+
+### Decorator Pattern
+Das Decorator Design Pattern ermöglicht das dynamische Hinzufügen von Fähigkeiten
+zu einer Klasse. Dazu wird die Klasse, dessen Verhalten wir erweitern möchten 
+(Component, Komponente), mit anderen Klassen (Decorator, Dekorierer) dekoriert
+(vgl. engl. "to wrap": umhüllen). Das heißt der Decorator umschließt (enthält)
+die Component. Der Decorator ist vom selben Typ wie das zudekorierende Objekt, 
+hat somit die gleiche Schnittstelle und kann an der selben Stelle wie die
+Component benutzt werden. 
+Er delegiert Methodenaufrufe an seine Component weiter und führt sein eigenes 
+Verhalten davor oder danach aus.
+
+Die Reihenfolge der Decorators sollte keine Rolle spielen, in der Praxis 
+ist dies aber mitunter anders.
+
+Eine Liste könnte als Decorator-Pattern ausgedrückt werden. Das Ende (NIL) ist 
+die Komponente (als Alternative könnte man unterschiedliche Enden von Listen)
+ermöglichen, die dann alle Komponenten wären). Die Dorierer sind dann
+die weiteren (vorne angehangenen) Listenelemente (viele Klassen, ein Interface).
+Sowohl Komponenten als auch Dekorierer erweitern das Listen-Interface, welches
+die `print`-Methode beinhaltet. Ein Aufruf dieser resultiert in rekursiven
+Aufrufen der print Methode von den geschachtelten Dekorierern bzw. der
+Komponente.
+
+[Decorator](https://www.philipphauer.de/study/se/design-pattern/decorator.php)
+
+### Rest WIP
+
+[Katalog](https://www.philipphauer.de/study/se/design-pattern.php)
+
 
 # Sonstiges
 ## Nützliches Git Gedöns
