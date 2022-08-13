@@ -53,3 +53,17 @@ $$\
 Wobei $$V$$ die Anzahl an Knoten, $$E$$ die Anzahl an Kanten und $$F$$ die Anzahl Fächen ist.
 
 [Wikipedia](https://de.wikipedia.org/wiki/Planarer_Graph#Der_Eulerscher_Polyedersatz)
+
+
+# Sonstiges
+## Nützliches Git Gedöns
+- Branch löschen: `git push origin :mybranch`
+- Tag erstellen: `git tag -a mytag`
+  - Tag löschen: `git push --delete origin mytag`
+- Stash (staged & unstaged uncommited changes): `git stash save 'mydescription'`
+  - Re-Apply changes (apply=keep stash): `git stash [apply/pop] stashname`
+  - Stash untracked changes aswell: `git stash -u`
+  - Stash ignored and untracked aswell: `git stash -a`
+  - List stashes: `git stash list`
+  - Create branch of stash: `git stash branch branchname stashname`
+  - Delete stash: `git stash drop stashname`
