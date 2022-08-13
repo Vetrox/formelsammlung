@@ -101,6 +101,72 @@ Komponente.
 
 [Decorator](https://www.philipphauer.de/study/se/design-pattern/decorator.php)
 
+### Factory Method Pattern
+Das Factory Method Entwurfsmuster dient der Entkopplung des Clients von der
+konkreten Instanziierung einer Klasse. Das erstellte Objekt kann elegant
+ausgetauscht werden. Oft wird es zur Trennung von (zentraler) Objektverarbeitung
+und (individueller) Objektherstellung verwendet. 
+
+Der Erstellungscode eines Objektes (Product genannt) wird in einer eigenen Klasse
+(Creator, Factory) ausgelagert. Dieser Creator ist abstrakt und delegiert die
+konkrete Objektinstanziierung wiederrum an seine Unterklasse. Erst die Unterklasse
+entscheidet welches Product erstellt wird. Da der Client sich komplett auf
+Abstraktion stützt (sowohl beim Creator als auch bei den Products), ist er
+vollkommen von den Implementierungen entkoppelt und unabhängig. 
+
+
+Der abstrakte Creator kann allgemeine Modifikationen am Product durchführen.
+Der konkrete Creator kann Produktspezifische Modifikationen an ihm durchführen.
+
+[Factory Method](https://www.philipphauer.de/study/se/design-pattern/factory-method.php)
+
+### Abstract Factory Pattern
+Das Abstract Factory Design Pattern dient der Definition einer 
+zusammenhängenden Familie aus Produkten (engl. products). Die Familien
+können elegant ausgetauscht werden.
+
+Der Instanziierungscode wird in eine Factory ausgelagert. Allerdings wird 
+die Factory hinter einer abstrakten Schnittstelle vor dem Client verborgen.
+Diese Factoryschnittstelle, die namensgebende Abstract Factory, definiert
+für jedes Produkt der Produktfamilie (Produktsatz) eine Operation, mit der 
+der Client eine Instanz des jeweiligen Produkts erhalten kann. Der Client
+ist damit von einer bestimmten Factoryimplementierung entkoppelt. Es stützt 
+sich allein auf Abstraktion - sowohl bei den Produkten als auch bei der Factory.
+
+Da eine Factory immer die gesamte Schnittstelle erfüllen muss, wird sicher
+gestellt, dass der Client nur mit Produkten arbeitet, die zusammen gehören
+und zusammen passen. Die abstrakte Factory gibt eine Familie an abstrakten 
+Produkten zurück.
+
+[Abstract Factory](https://www.philipphauer.de/study/se/design-pattern/abstract-factory.php)
+
+### Singleton Pattern
+Das Singleton Entwurfsmuster sorgt dafür, dass es von einer Klasse nur eine
+einzige Instanz gibt und diese global zugänglich ist.
+
+Damit es nur eine einzigartige Instanz gibt, muss eine
+Instanziierung durch den Client verhindert werden. Dafür wird der 
+Konstruktur privat deklariert. Nun kann einzig der Singletoncode 
+selbst das Singleton instanziieren.
+
+#### Lazy- vs Eager-Loading
+Lazy erstellt die Singleton-Instanz erst beim ersten Aufruf der 
+`getInstance`-Methode. Eager loading erstellt die Instanz beim Laden der Klasse 
+(statische Initialisierung).
+
+#### Synchronisierung
+Multithreading benötigt den sog. <em>doppelten Null-Check</em>:
+```py
+if instance is null:
+    synchronize:
+        if instance is null:
+            InitializeInstance()
+else:
+    return instance
+```
+
+[Singleton](https://www.philipphauer.de/study/se/design-pattern/singleton.php)
+
 ### Rest WIP
 
 [Katalog](https://www.philipphauer.de/study/se/design-pattern.php)
