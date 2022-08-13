@@ -67,3 +67,12 @@ Wobei $$V$$ die Anzahl an Knoten, $$E$$ die Anzahl an Kanten und $$F$$ die Anzah
   - List stashes: `git stash list`
   - Create branch of stash: `git stash branch branchname stash@{xy}`
   - Delete stash: `git stash drop stash@{xy}`
+
+### Merging strategies
+`git checkout main && git merge feature [options] `
+- Fast-forward (`--ff-only`): `feature`-branch hat neue commits, main branch nicht. Alle `feature` commits werden an main angehangen.
+- Recursive (`-s recursive`): Default. Macht irgendwie alles und nix.
+- Ours (`-s ours`): Löst merge-Konflikte, indem immer die main Version der Änderung bevorzugt wird.
+- Octopus (`-s octopus`): Bricht den merge bei Konflikten ab. 
+- Resolve (`-s resolve`): Löst nur absolut triviale Konflikte automatisch.
+- Subtree (`-s subtree`): Wenn feature eine teilbaum von main ist.
