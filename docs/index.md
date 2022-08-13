@@ -25,7 +25,7 @@ Die worst-case Laufzeit eines vergleichsbasierten Sortieralgorithmus, muss in $$
 
 [Wikipedia](https://de.wikipedia.org/wiki/Sortierverfahren#Beweis_der_unteren_Schranke_f%C3%BCr_vergleichsbasiertes_Sortieren)
 
-# Berechebarkeitstheorie
+# Berechenbarkeitstheorie
 ## Satz von Rice
 Jede nicht triviale sematische Eigenschaft eines Programms ist unentscheidbar.
 
