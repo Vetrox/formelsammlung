@@ -221,7 +221,7 @@ zu implementieren.
 
 # Analysis
 ## Partielle Integration
-Sei $$\mathbb{I} ein offenes Intervall und $$f,g: \mathbb{I} \to \mathbb{R}$$ differenzierbar.
+Sei $$\mathbb{I}$$ ein offenes Intervall und $$f,g: \mathbb{I} \to \mathbb{R}$$ differenzierbar.
 Dann gilt:
 
 $$\int f \cdot g \, dx = f \cdot \int g \, dx - \int f' \cdot (\int g \, dx) \, dx$$
