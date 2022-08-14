@@ -1,5 +1,5 @@
-* IMPORTANT LINE FOR TOC
-{:toc}
+1. IMPORTANT LINE FOR TOC
+{:toc toc_levels="2"}
 
 # Komplexitätstheorie
 ## NP-Schwere / NP-Härte
