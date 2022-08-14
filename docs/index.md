@@ -219,6 +219,19 @@ zu implementieren.
 [MVC GfG](https://www.geeksforgeeks.org/mvc-design-pattern/)
 [MVC FCC](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/)
 
+# Analysis
+## Partielle Integration
+Sei $$\mathbb{I} ein offenes Intervall und $$f,g: \mathbb{I} \to \mathbb{R}$$ differenzierbar.
+Dann gilt:
+
+$$\int f \cdot g \, dx = f \cdot \int g \, dx - \int f' \cdot (\int g \, dx) \, dx$$
+
+oder anders ausgedrückt:
+
+$$\int f \cdot g' \, dx = f \cdot g - \int f' \cdot g \, dx$$
+
+[Integration by Parts](https://www.mathsisfun.com/calculus/integration-by-parts.html)
+
 # Sonstiges
 ## Nützliches Git Gedöns
 - Branch löschen: `git push origin :mybranch`
