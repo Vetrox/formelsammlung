@@ -167,10 +167,57 @@ else:
 
 [Singleton](https://www.philipphauer.de/study/se/design-pattern/singleton.php)
 
-### Rest WIP
+### Command Pattern
+Das Command Design Pattern ermöglicht die Modularisierung von Befehlen und 
+Aufrufen. Auf elegante Weise können Befehle rückgängig gemacht, protokolliert
+oder in einer Warteschlange gelegt werden.
 
-[Katalog](https://www.philipphauer.de/study/se/design-pattern.php)
+Invoker (Aufrufer) und Receiver (Empfänger) werden entkoppelt. 
+Dazu werden die namensgebenden Command-Objekte (Befehle) zwischengeschaltet. 
+Nur das Command-Objekt allein weiß, welche Aktionen auf welchem Empfänger 
+auszuführen sind. Das Command-Objekt wird extern erstellt/initialisiert.
+Ein Settingsmenü könnte weitere konfiguration an ihm durchführen.
+Der Aufrufer ist nur sinnvoll eingesetzt, wenn er keine erstellung/konfiguration
+vom Command-Objekt durchführt. Mehrere Aufrufer können somit den selben Befehl
+ausführen. Das Command-Objekt arbeitet mit dem konkreten Receiver und führt
+die spezifischen Aufrufe der Receiver-Methoden durch.
 
+[Command](https://www.philipphauer.de/study/se/design-pattern/command.php)
+
+### Composite Pattern
+Das Composite Entwurfsmuster ermöglicht es, eine verschachtelte (Baum)Struktur 
+einheitlich zu behandeln, unabhängig davon, ob es sich um ein atomares Element 
+oder um ein Behälter für weitere Elemente handelt. Der Client kann elegant mit 
+der Struktur arbeiten.
+
+Es wird eine gemeinsame Schnittstelle für die Elementbehälter (Composite,
+Kompositum; Aggregat, Knoten) und für die atomaren Elemente (Leaf, Blatt)
+definiert: Component. Diese Schnittstelle Component definiert die Methoden,
+die gleichermaßen auf Composites und auf Leafs angewandt werden sollen. 
+Composites delegieren oft Aufrufe (operate()) an ihre Components, die atomare
+Leafs oder wiederrum zusammengesetzte Composites seien können.
+
+Die Default-Implementierung der Component-Schnittstelle beinhaltet für alle
+Methoden ausschließlich `throw new Exception("not implemented")`. Blätter
+und Knoten haben somit nur die Aufgabe, die für sie relevanten Methoden
+zu implementieren.
+
+[Composite](https://www.philipphauer.de/study/se/design-pattern/composite.php)
+
+### Model View Controller Pattern
+- Model: Backend, welches alle Daten verwaltet
+  - Datenbankinteraktion
+  - Integrität etc.
+- View: Stellt den aktuellen Zustand dar (GUI)
+  - Userinteraktionen mit der View werden via Eventhandler und Setter an
+    den Controller weitergeleitet
+- Controller: Logik, die entscheidet wie die Daten dargestellt werden und das Model
+  modifiziert wird.
+  - Zieht sich den Zustand der Daten aus dem Model
+  - Setzt die View auf
+
+[MVC GfG](https://www.geeksforgeeks.org/mvc-design-pattern/)
+[MVC FCC](https://www.freecodecamp.org/news/the-model-view-controller-pattern-mvc-architecture-and-frameworks-explained/)
 
 # Sonstiges
 ## Nützliches Git Gedöns
