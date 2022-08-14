@@ -1,4 +1,4 @@
-1.1 IMPORTANT LINE FOR TOC
+1. IMPORTANT LINE FOR TOC
 {:toc} 
 
 # Komplexitätstheorie
