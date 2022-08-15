@@ -232,7 +232,39 @@ $$\int f \cdot g' \, dx = f \cdot g - \int f' \cdot g \, dx$$
 
 [Integration by Parts](https://www.mathsisfun.com/calculus/integration-by-parts.html)
 
+# Internet
+## Open System Interconnection (OSI) model
+1. Physical: Transfers Bits
+2. Data Link: Transfers Data Frames between 2 nodes
+3. Network (IP): Transfers Packets over a multi-node Network (routing, addressing, etc.)
+4. Transport (TCP UDP): Transfers Segments/Datagrams using segmentation, acknowledgement etc.
+
+[Wikipedia](https://en.wikipedia.org/wiki/OSI_model)
+
+## Hypertext Transfer Protocol (HTTP)
+Basiert auf TCP.
+
+![Anfrage](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http_request.png)
+
+Methoden:
+- GET: Erhält Daten vom Server
+- POST: Sendet Daten an den Server
+- OPTIONS: Erlaubte Kommunikationsmethoden mit dem Server
+- HEAD: GET ohne Body (nur header).
+
+[HTTP HEADERS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+[HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+![Antwort](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/http_response.png)
+
+[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+
 # Sonstiges
+## Curl Zeugs
+- `--request [GET/POST/HEAD/PUT/DELETE...]` request type
+- `--url <url>` to request
+- `--header 'xyz'` custom header
+
 ## Nützliches Git Gedöns
 - Branch löschen: `git push origin :mybranch`
 - Tag erstellen: `git tag -a mytag`
