@@ -261,9 +261,19 @@ Methoden:
 
 # Sonstiges
 ## Curl Zeugs
-- `--request [GET/POST/HEAD/PUT/DELETE...]` request type
-- `--url <url>` to request
+- `--request [GET/POST/HEAD/...]` request type
 - `--header 'xyz'` custom header
+
+```sh
+curl --trace-ascii - \ 
+<ip/domain> \ 
+--request POST \
+--header 'Accept:' \
+--header 'User-Agent:' \
+--header 'Host: <domain>' \
+--data 'mysuperdata'
+```
+
 
 ## Nützliches Git Gedöns
 - Branch löschen: `git push origin :mybranch`
