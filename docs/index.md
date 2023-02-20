@@ -37,14 +37,12 @@ Die worst-case Laufzeit eines vergleichsbasierten Sortieralgorithmus, muss in $$
 
 # Mastertheorem
 Sei $$0 < a, 1 < b, 0 \leq d$$ und $$T(n) = a \cdot T(\lceil \frac{n}{b} \rceil) + f(n)$$ mit $$f(n) \in \mathcal{O}(n^d)$$, dann
-\begin{align*}
-    T(n) = \begin{cases}
+
+$$T(n) = \begin{cases}
     \mathcal{O}(n^d) &\text{falls } d > log_b(a) \\
     \mathcal{O}(n^d \cdot log(n)) &\text{falls } d = log_b(a) \\
     \mathcal{O}(n^{log_b(a)}) &\text{falls } d < log_b(a)
-    \end{cases}
-\end{align*}
-
+    \end{cases}$$
 **Beweis**: [Etwas mühselig](https://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec20-master/mm-proof.pdf)
 
 # Berechenbarkeitstheorie
