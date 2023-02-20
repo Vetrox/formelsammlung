@@ -43,6 +43,7 @@ $$T(n) = \begin{cases}
     \mathcal{O}(n^d \cdot log(n)) &\text{falls } d = log_b(a) \\
     \mathcal{O}(n^{log_b(a)}) &\text{falls } d < log_b(a)
     \end{cases}$$
+
 **Beweis**: [Etwas mühselig](https://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec20-master/mm-proof.pdf)
 
 # Berechenbarkeitstheorie
