@@ -25,7 +25,7 @@ Die worst-case Laufzeit eines vergleichsbasierten Sortieralgorithmus, muss in $$
 
 [Wikipedia](https://de.wikipedia.org/wiki/Sortierverfahren#Beweis_der_unteren_Schranke_f%C3%BCr_vergleichsbasiertes_Sortieren)
 
-# Divide & Conquer
+## Divide & Conquer
 1. Divide: Teile das Gesamtproblem der Größe $$n$$ in $$a$$ Teilprobleme der Größe $$\lceil \frac{n}{b} \rceil$$
 2. Conquer: Kombiniere $$a$$ Teilproblemlösungen zu einer Gesamtlösung
 3. Rekursiver Anker: Bei welcher Bedingung bricht der Divide-Schritt ab? Wie ensteht hier eine Lösung?
@@ -35,7 +35,7 @@ Die worst-case Laufzeit eines vergleichsbasierten Sortieralgorithmus, muss in $$
     2. IV: Alle Teillösungen erfüllen die Behauptung.
     3. IS: Durch die Kombination der Teillösungen gilt die Behauptung auch für die Gesamtlösung
 
-# Mastertheorem
+## Mastertheorem
 Sei $$0 < a, 1 < b, 0 \leq d$$ und $$T(n) = a \cdot T(\lceil \frac{n}{b} \rceil) + f(n)$$ mit $$f(n) \in \mathcal{O}(n^d)$$, dann
 
 $$T(n) = \begin{cases}
@@ -45,6 +45,11 @@ $$T(n) = \begin{cases}
     \end{cases}$$
 
 **Beweis**: [Etwas mühselig](https://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec20-master/mm-proof.pdf)
+
+
+# Datenbanken
+## Entity-relationship model
+[Orignal paper](https://dl.acm.org/doi/pdf/10.1145/320434.320440)
 
 # Berechenbarkeitstheorie
 ## Satz von Rice
