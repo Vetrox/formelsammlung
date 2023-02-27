@@ -51,7 +51,7 @@ $$T(n) = \begin{cases}
 ## Entity-relationship model
 - Entity: Ein Objekt. Es kann nur über Eigenschaften beschrieben werden.
 - Entity(-typ/ set): Eine Klasse gleichartiger Entitäten.
-- Relationship: Beschreibt Beziehungen zwischen Entitäten. \emph{meist binär}
+- Relationship: Beschreibt Beziehungen zwischen Entitäten. $$\emph{meist binär}$$
 - Relationship(-typ/ set): Eine Klasse gleichartiger Beziehungen.
 - Attribut: Repräsentiert eine Eigenschaft von Entitäten oder Beziehungen.
 - Rolle: Die Rolle eines Entitytyp ist die Funktion, die sie in der Beziehung durchführt.
