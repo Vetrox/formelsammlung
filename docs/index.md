@@ -49,6 +49,14 @@ $$T(n) = \begin{cases}
 
 # Datenbanken
 ## Entity-relationship model
+$$\begin{enumerate}
+    \item[Entity] Ein Objekt. Es kann nur über Eigenschaften beschrieben werden.
+    \item[Entity(-typ/ set)] Eine Klasse gleichartiger Entitäten.
+    \item[Relationship] Beschreibt Beziehungen zwischen Entitäten. \emph{meist binär}
+    \item[Relationship(-typ/ set)] Eine Klasse gleichartiger Beziehungen.
+    \item[Attribut] Repräsentiert eine Eigenschaft von Entitäten oder Beziehungen.
+\end{enumerate}$$
+
 [Orignal paper](https://dl.acm.org/doi/pdf/10.1145/320434.320440)
 
 # Berechenbarkeitstheorie
